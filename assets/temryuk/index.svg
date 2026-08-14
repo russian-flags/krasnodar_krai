@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc" data-placeholder="true">
+  <title id="title">Заглушка флага: Темрюк</title>
+  <desc id="desc">Временная SVG-заглушка вместо официального флага города.</desc>
+  <rect width="900" height="600" fill="#f4f4f5"/>
+  <rect x="24" y="24" width="852" height="552" rx="20" fill="none" stroke="#71717a" stroke-width="8" stroke-dasharray="28 20"/>
+  <text x="450" y="280" fill="#3f3f46" font-family="Arial, sans-serif" font-size="58" font-weight="700" text-anchor="middle">SVG PLACEHOLDER</text>
+  <text x="450" y="355" fill="#52525b" font-family="Arial, sans-serif" font-size="42" text-anchor="middle">Темрюк</text>
+</svg>
