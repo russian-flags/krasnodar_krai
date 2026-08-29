@@ -2,51 +2,49 @@
 
 [Русская версия](./README.md)
 
-Native ESM collection of Krasnodar Krai city metadata and SVG files for city flags. Use it as an npm dependency in JavaScript/TypeScript projects or as a local set of SVG files and lazy loaders.
+Native ESM collection of SVG city flags and city metadata for Krasnodar Krai, Russia. The package can be used as an npm dependency in JavaScript/TypeScript projects or as a local set of SVG files and lazy loaders.
 
-The list is based on the Russian Wikipedia page ["Городские населённые пункты Краснодарского края"](https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B8%D0%B5_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F), "Города" section: 26 cities. Urban-type settlements are not included, matching the structure of the Tatarstan reference package.
+The list is based on the Russian Wikipedia page ["Городские населённые пункты Краснодарского края"](https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%BE%D0%B4%D1%81%D0%BA%D0%B8%D0%B5_%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D1%91%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D1%83%D0%BD%D0%BA%D1%82%D1%8B_%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%BE%D0%B4%D0%B0%D1%80%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%B0%D1%8F), "Города" section: 26 cities. Urban-type settlements are not included.
 
-> [!IMPORTANT]
-> All 26 SVG files are clearly marked placeholders, not official flags. Before publishing, replace every `assets/<slug>/index.svg` with a verified flag image for the corresponding city.
+The collection contains 26 ready-to-use optimized SVG flags. Project source files live in `assets/<slug>/index.svg`, and the build copies them to `dist/flags/<slug>.svg`.
 
 ## Preview
 
-| City | SVG | slug |
+| City | Flag | slug |
 | --- | --- | --- |
-| Abinsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/abinsk/index.svg" width="120" alt="SVG placeholder: Abinsk"> | `abinsk` |
-| Anapa | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/anapa/index.svg" width="120" alt="SVG placeholder: Anapa"> | `anapa` |
-| Apsheronsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/apsheronsk/index.svg" width="120" alt="SVG placeholder: Apsheronsk"> | `apsheronsk` |
-| Armavir | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/armavir/index.svg" width="120" alt="SVG placeholder: Armavir"> | `armavir` |
-| Belorechensk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/belorechensk/index.svg" width="120" alt="SVG placeholder: Belorechensk"> | `belorechensk` |
-| Gelendzhik | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/gelendzhik/index.svg" width="120" alt="SVG placeholder: Gelendzhik"> | `gelendzhik` |
-| Goryachy Klyuch | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/goryachy-klyuch/index.svg" width="120" alt="SVG placeholder: Goryachy Klyuch"> | `goryachy-klyuch` |
-| Gulkevichi | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/gulkevichi/index.svg" width="120" alt="SVG placeholder: Gulkevichi"> | `gulkevichi` |
-| Yeysk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/yeysk/index.svg" width="120" alt="SVG placeholder: Yeysk"> | `yeysk` |
-| Korenovsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/korenovsk/index.svg" width="120" alt="SVG placeholder: Korenovsk"> | `korenovsk` |
-| Krasnodar | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/krasnodar/index.svg" width="120" alt="SVG placeholder: Krasnodar"> | `krasnodar` |
-| Kropotkin | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/kropotkin/index.svg" width="120" alt="SVG placeholder: Kropotkin"> | `kropotkin` |
-| Krymsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/krymsk/index.svg" width="120" alt="SVG placeholder: Krymsk"> | `krymsk` |
-| Kurganinsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/kurganinsk/index.svg" width="120" alt="SVG placeholder: Kurganinsk"> | `kurganinsk` |
-| Labinsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/labinsk/index.svg" width="120" alt="SVG placeholder: Labinsk"> | `labinsk` |
-| Novokubansk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/novokubansk/index.svg" width="120" alt="SVG placeholder: Novokubansk"> | `novokubansk` |
-| Novorossiysk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/novorossiysk/index.svg" width="120" alt="SVG placeholder: Novorossiysk"> | `novorossiysk` |
-| Primorsko-Akhtarsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/primorsko-akhtarsk/index.svg" width="120" alt="SVG placeholder: Primorsko-Akhtarsk"> | `primorsko-akhtarsk` |
-| Slavyansk-na-Kubani | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/slavyansk-na-kubani/index.svg" width="120" alt="SVG placeholder: Slavyansk-na-Kubani"> | `slavyansk-na-kubani` |
-| Sochi | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/sochi/index.svg" width="120" alt="SVG placeholder: Sochi"> | `sochi` |
-| Temryuk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/temryuk/index.svg" width="120" alt="SVG placeholder: Temryuk"> | `temryuk` |
-| Timashevsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/timashevsk/index.svg" width="120" alt="SVG placeholder: Timashevsk"> | `timashevsk` |
-| Tikhoretsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/tikhoretsk/index.svg" width="120" alt="SVG placeholder: Tikhoretsk"> | `tikhoretsk` |
-| Tuapse | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/tuapse/index.svg" width="120" alt="SVG placeholder: Tuapse"> | `tuapse` |
-| Ust-Labinsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/ust-labinsk/index.svg" width="120" alt="SVG placeholder: Ust-Labinsk"> | `ust-labinsk` |
-| Khadyzhensk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/khadyzhensk/index.svg" width="120" alt="SVG placeholder: Khadyzhensk"> | `khadyzhensk` |
+| Abinsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/abinsk/index.svg" width="120" alt="Flag of Abinsk"> | `abinsk` |
+| Anapa | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/anapa/index.svg" width="120" alt="Flag of Anapa"> | `anapa` |
+| Apsheronsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/apsheronsk/index.svg" width="120" alt="Flag of Apsheronsk"> | `apsheronsk` |
+| Armavir | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/armavir/index.svg" width="120" alt="Flag of Armavir"> | `armavir` |
+| Belorechensk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/belorechensk/index.svg" width="120" alt="Flag of Belorechensk"> | `belorechensk` |
+| Gelendzhik | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/gelendzhik/index.svg" width="120" alt="Flag of Gelendzhik"> | `gelendzhik` |
+| Goryachy Klyuch | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/goryachy-klyuch/index.svg" width="120" alt="Flag of Goryachy Klyuch"> | `goryachy-klyuch` |
+| Gulkevichi | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/gulkevichi/index.svg" width="120" alt="Flag of Gulkevichi"> | `gulkevichi` |
+| Yeysk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/yeysk/index.svg" width="120" alt="Flag of Yeysk"> | `yeysk` |
+| Korenovsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/korenovsk/index.svg" width="120" alt="Flag of Korenovsk"> | `korenovsk` |
+| Krasnodar | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/krasnodar/index.svg" width="120" alt="Flag of Krasnodar"> | `krasnodar` |
+| Kropotkin | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/kropotkin/index.svg" width="120" alt="Flag of Kropotkin"> | `kropotkin` |
+| Krymsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/krymsk/index.svg" width="120" alt="Flag of Krymsk"> | `krymsk` |
+| Kurganinsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/kurganinsk/index.svg" width="120" alt="Flag of Kurganinsk"> | `kurganinsk` |
+| Labinsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/labinsk/index.svg" width="120" alt="Flag of Labinsk"> | `labinsk` |
+| Novokubansk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/novokubansk/index.svg" width="120" alt="Flag of Novokubansk"> | `novokubansk` |
+| Novorossiysk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/novorossiysk/index.svg" width="120" alt="Flag of Novorossiysk"> | `novorossiysk` |
+| Primorsko-Akhtarsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/primorsko-akhtarsk/index.svg" width="120" alt="Flag of Primorsko-Akhtarsk"> | `primorsko-akhtarsk` |
+| Slavyansk-na-Kubani | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/slavyansk-na-kubani/index.svg" width="120" alt="Flag of Slavyansk-na-Kubani"> | `slavyansk-na-kubani` |
+| Sochi | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/sochi/index.svg" width="120" alt="Flag of Sochi"> | `sochi` |
+| Temryuk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/temryuk/index.svg" width="120" alt="Flag of Temryuk"> | `temryuk` |
+| Timashevsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/timashevsk/index.svg" width="120" alt="Flag of Timashevsk"> | `timashevsk` |
+| Tikhoretsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/tikhoretsk/index.svg" width="120" alt="Flag of Tikhoretsk"> | `tikhoretsk` |
+| Tuapse | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/tuapse/index.svg" width="120" alt="Flag of Tuapse"> | `tuapse` |
+| Ust-Labinsk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/ust-labinsk/index.svg" width="120" alt="Flag of Ust-Labinsk"> | `ust-labinsk` |
+| Khadyzhensk | <img src="https://raw.githubusercontent.com/russian-flags/krasnodar_krai/main/assets/khadyzhensk/index.svg" width="120" alt="Flag of Khadyzhensk"> | `khadyzhensk` |
 
 ## Features
 
-- Metadata for 26 Krasnodar Krai cities.
-- A valid SVG placeholder for every city.
+- 26 city flags in SVG format.
 - ESM build with TypeScript types.
-- Lazy loaders for every SVG.
-- Lookup by slug, code, Russian/English name, or alias.
+- Lazy loaders for every flag.
+- Flag lookup by slug, code, Russian/English name, or alias.
 - Direct SVG imports through `flags/<slug>` or `svg/<slug>`.
 
 ## Installation
@@ -83,7 +81,7 @@ const image = await loadFlag("krasnodar", {
 document.body.append(image);
 ```
 
-`loadFlag` is an alias for `loadFlagImage`. It lazily imports the requested SVG module, creates an `<img>`, and sets `loading="lazy"` and `decoding="async"` by default.
+`loadFlag` is an alias for `loadFlagImage`. It lazily imports the requested flag module, creates an `<img>`, and sets `loading="lazy"` and `decoding="async"` by default.
 
 The image creation APIs target browsers and require a global `Image`/DOM. Metadata and lookup helpers work in Node.js without a DOM.
 
@@ -104,7 +102,7 @@ import krasnodarFlag from "@russian-flags/krasnodar-krai/flags/krasnodar.svg";
 import krasnodarSvg from "@russian-flags/krasnodar-krai/svg/krasnodar.svg";
 ```
 
-Both paths point to the same package file:
+`flags/<slug>` and `svg/<slug>` point to the same package file:
 
 ```text
 dist/flags/<slug>.svg
@@ -170,12 +168,12 @@ Unknown values are ignored and do not throw.
 | `settlementSlugs` | Array of all available slugs. |
 | `normalizeSettlementInput(input)` | Normalizes user input before lookup. |
 | `resolveSettlementSlug(input)` | Returns a slug by slug, code, name, or alias. |
-| `getFlagModuleLoader(input)` | Returns a lazy SVG module loader or `undefined`. |
-| `loadFlagModule(input)` | Lazily imports an SVG module and throws for unknown input. |
-| `loadFlagImage(input, options)` | Loads an SVG in the browser and returns an `HTMLImageElement`. |
-| `loadFlag(input, options)` | Alias for `loadFlagImage`. |
+| `getFlagModuleLoader(input)` | Returns a lazy flag module loader or `undefined`. |
+| `loadFlagModule(input)` | Lazily imports a flag module and throws for unknown input. |
+| `loadFlagImage(input, options)` | Loads a flag in the browser and returns an `HTMLImageElement`; rejects for unknown input. |
+| `loadFlag(input, options)` | Alias for `loadFlagImage` with the same behavior. |
 | `preloadFlag(input)` | Starts module loading without awaiting it. |
-| `createFlagImage(src, defaultAlt, options)` | Creates and configures an `<img>` for an SVG. |
+| `createFlagImage(src, defaultAlt, options)` | Creates and configures an `<img>` for an SVG flag. |
 
 ## Types
 
@@ -199,7 +197,7 @@ npm install
 npm run dev
 ```
 
-Vite opens an example that displays the SVG placeholders directly from `assets`.
+Vite opens the example page in the browser. Unlike the package npm API, the example displays SVG directly from `assets`.
 
 ## Development
 
@@ -218,7 +216,7 @@ Build flow:
 2. `scripts/build.js` builds JavaScript with `esbuild` and copies SVG files to `dist/flags/<slug>.svg`.
 3. `tsc -p tsconfig.build.json` emits `.d.ts` files into `dist`.
 
-To replace a placeholder, put the official SVG at `assets/<slug>/index.svg` and run the build. Do not keep `data-placeholder="true"` in a finished flag.
+To update a flag, put the SVG into `assets/<slug>/index.svg` and run the build.
 
 The `examples/` directory is excluded from the npm package by `package.json#files` and explicitly by `.npmignore`.
 
@@ -229,4 +227,4 @@ The `examples/` directory is excluded from the npm package by `package.json#file
 
 ## License
 
-Package code is MIT-licensed. The current SVG files are neutral placeholders. If they are replaced with official municipal symbols, that artwork is not automatically covered by the MIT license; see [LICENSE](./LICENSE).
+Package code is MIT-licensed. The SVG flags depict official municipal symbols and are not licensed under MIT by this package. Use of names, emblems, and official symbols may be regulated separately; see [LICENSE](./LICENSE) for details.

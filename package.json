@@ -1,7 +1,7 @@
 {
   "name": "@russian-flags/krasnodar-krai",
   "version": "0.1.0",
-  "description": "SVG flag placeholders and city metadata for Krasnodar Krai, Russia for JavaScript and TypeScript: ESM imports and lazy loaders.",
+  "description": "SVG flags and city metadata for Krasnodar Krai, Russia for JavaScript and TypeScript: ESM imports and lazy loaders.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/russian-flags/krasnodar_krai.git"

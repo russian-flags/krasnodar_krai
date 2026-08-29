@@ -18,8 +18,7 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 Flag asset notice:
 
-The bundled SVG files are placeholders and do not depict official municipal
-symbols. If they are replaced with official flag artwork, that artwork is not
-automatically covered by the MIT code license. No rights in names, emblems,
+Bundled SVG flag files depict official municipal symbols and are not licensed
+under the MIT code license by this package. No rights in names, emblems,
 trademarks, or official symbols are granted. Their use may be regulated
 separately; users are responsible for checking the rules that apply to them.

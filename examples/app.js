@@ -76,7 +76,7 @@ function makeFlagCell(settlement) {
   frame.dataset.kind = "flag";
 
   const image = document.createElement("img");
-  image.alt = `SVG-заглушка флага: ${settlement.nameRu}`;
+  image.alt = `Флаг: ${settlement.nameRu}`;
   image.loading = "lazy";
   image.decoding = "async";
 
@@ -115,13 +115,13 @@ function makeRow(settlement) {
 }
 
 function updateSummary() {
-  summary.textContent = `${settlements.length} городов, ${settlements.length} SVG-заглушек из assets`;
+  summary.textContent = `${settlements.length} городов, ${settlements.length} SVG-флагов из assets`;
 }
 
 function openFlagModal(settlement) {
   flagModalTitle.textContent = settlement.nameRu;
   flagModalImage.removeAttribute("src");
-  flagModalImage.alt = `SVG-заглушка флага: ${settlement.nameRu}`;
+  flagModalImage.alt = `Флаг: ${settlement.nameRu}`;
   if (typeof flagModal.showModal === "function") {
     flagModal.showModal();
   } else {
@@ -132,7 +132,7 @@ function openFlagModal(settlement) {
     flagModalImage.src = flagUrl(settlement);
   } catch (error) {
     console.error(error);
-    flagModalImage.alt = `Не удалось загрузить SVG-заглушку: ${settlement.nameRu}`;
+    flagModalImage.alt = `Не удалось загрузить флаг: ${settlement.nameRu}`;
   }
 }
 
