@@ -113,7 +113,7 @@ Default-importing an SVG returns a URL string and requires a bundler with SVG as
 After publication, the package can also serve SVG files through an npm CDN:
 
 ```html
-<img src="https://unpkg.com/@russian-flags/krasnodar-krai@0.1.0/dist/flags/krasnodar.svg" alt="Flag of Krasnodar" />
+<img src="https://unpkg.com/@russian-flags/krasnodar-krai@1.0.0/dist/flags/krasnodar.svg" alt="Flag of Krasnodar" />
 ```
 
 ## City Lookup
